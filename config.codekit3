@@ -3182,6 +3182,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/facebook.png": {
+		"ft": 32768,
+		"iS": 1289,
+		"oA": 0,
+		"oAP": "\/images\/facebook.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/food.png": {
 		"ft": 32768,
 		"iS": 270972,
@@ -3203,6 +3211,14 @@
 		"iS": 1169,
 		"oA": 0,
 		"oAP": "\/images\/icon2.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/instagram.png": {
+		"ft": 32768,
+		"iS": 1360,
+		"oA": 0,
+		"oAP": "\/images\/instagram.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3267,6 +3283,14 @@
 		"iS": 865,
 		"oA": 0,
 		"oAP": "\/images\/smartphone.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/twitter.png": {
+		"ft": 32768,
+		"iS": 1418,
+		"oA": 0,
+		"oAP": "\/images\/twitter.png",
 		"oF": 0,
 		"opt": 0
 		},

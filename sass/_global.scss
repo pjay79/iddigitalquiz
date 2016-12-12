@@ -133,7 +133,7 @@ nav {
 section {
   text-align: center;
 }
-.icon-grey {
+.icon-grey, .icon-white {
   margin: 20px 0;
 }
 // First section under hero
@@ -197,7 +197,7 @@ section {
 .carousel-caption {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 52.5%;
   right: auto;
   bottom: auto;
   transform: translate(-50%, -50%);
@@ -233,4 +233,35 @@ section {
     font-size: 18px;
     padding: 20px 40px;
   }
+}
+// Sign Up
+.sign-up {
+  @include cover-background('bg.png');
+  padding: 100px 0;
+  color: $white;
+  overflow: hidden;
+}
+form {
+  padding: 50px 50px 100px;
+}
+.control-label {
+  text-align:left;
+}
+input[type=email], input[type=text] {
+  border-radius: 0;
+  box-shadow: none;
+}
+// Footer
+footer {
+  text-align: center;
+  padding-top: 100px;
+}
+.follow-us__icons {
+  margin: 15px 15px 50px;
+}
+.copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border: 1px solid #CCC;
+  color: #CCC;
 }
