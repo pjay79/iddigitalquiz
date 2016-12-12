@@ -3108,6 +3108,24 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/images\/cinemas.png": {
+		"ft": 32768,
+		"iS": 248045,
+		"oA": 0,
+		"oAP": "\/images\/cinemas.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/down-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/images\/down-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/images\/download.png": {
 		"ft": 32768,
 		"iS": 968,
@@ -3124,11 +3142,27 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/food.png": {
+		"ft": 32768,
+		"iS": 270972,
+		"oA": 0,
+		"oAP": "\/images\/food.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/icon.png": {
 		"ft": 32768,
 		"iS": 1013,
 		"oA": 0,
 		"oAP": "\/images\/icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/icon2.png": {
+		"ft": 32768,
+		"iS": 1169,
+		"oA": 0,
+		"oAP": "\/images\/icon2.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3155,6 +3189,22 @@
 		"oAP": "\/images\/pexels-photo.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/popcorn.png": {
+		"ft": 32768,
+		"iS": 293010,
+		"oA": 0,
+		"oAP": "\/images\/popcorn.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/images\/red-woman-girl-brown.jpg": {
+		"ft": 16384,
+		"iS": 591795,
+		"oA": 0,
+		"oAP": "\/images\/red-woman-girl-brown.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/index.html": {
 		"ft": 8192,

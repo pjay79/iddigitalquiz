@@ -1,6 +1,12 @@
 /* {
 outline: 1px dotted #ff0000;
 } */
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
+  src: url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),      url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
 html, body {
   overflow-x: hidden;
 }
@@ -12,7 +18,6 @@ h1, h2, h3, h4 {
   line-height: 1.2em;
 }
 h1 {
-  font-weight: lighter;
   font-size: 96px;
   letter-spacing: 4px;
 }
@@ -77,15 +82,23 @@ nav {
   color: $white;
   ul {
     width: 90%;
-    margin: 0 auto;
-    padding: 10px 0;
+    margin: 0 auto 0 0;
     list-style: none;
     li {
       display: inline-block;
-      padding: 0 2.8%;
+      padding: 10px 2.5%;
       font-family: 'Arial', sans-serif;
       font-size: 12px;
       text-transform: uppercase;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+      img {
+        margin-left: 5px;
+      }
+      &:hover {
+        background-color: $white;
+        color: $black;
+      }
     }
   }
 }
@@ -104,4 +117,25 @@ nav {
   h2 {
     margin-bottom: 100px;
   }
+}
+// Sections
+section {
+  text-align: center;
+}
+.cinemas-and-food {
+
+  .left {
+    padding: 150px 0 250px 0;
+  }
+  .right {
+    padding: 250px 0 150px 0;
+  }
+}
+// Carounsel
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+margin: auto;
+}
+.icon2 {
+  margin: 20px 0;
 }

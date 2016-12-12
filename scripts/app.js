@@ -1,6 +1,6 @@
   // Force scroll to top on refresh + force cache reload
   $(window).on('beforeunload', function(){
-  $(window).scrollTop(0);
+  //$(window).scrollTop(0);
   $(window).location.reload(true);
   });
   // Set 100% viewport width/height to div's
