@@ -3108,6 +3108,54 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/images\/download.png": {
+		"ft": 32768,
+		"iS": 968,
+		"oA": 0,
+		"oAP": "\/images\/download.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/drop-down-arrow.png": {
+		"ft": 32768,
+		"iS": 537,
+		"oA": 0,
+		"oAP": "\/images\/drop-down-arrow.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/icon.png": {
+		"ft": 32768,
+		"iS": 1013,
+		"oA": 0,
+		"oAP": "\/images\/icon.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 3163,
+		"oA": 0,
+		"oAP": "\/images\/logo.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/magnifying-glass.png": {
+		"ft": 32768,
+		"iS": 1006,
+		"oA": 0,
+		"oAP": "\/images\/magnifying-glass.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/pexels-photo.jpg": {
+		"ft": 16384,
+		"iS": 1144949,
+		"oA": 0,
+		"oAP": "\/images\/pexels-photo.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
