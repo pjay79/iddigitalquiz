@@ -3108,11 +3108,43 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/images\/books.jpg": {
+		"ft": 16384,
+		"iS": 572565,
+		"oA": 0,
+		"oAP": "\/images\/books.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/cakes.jpg": {
+		"ft": 16384,
+		"iS": 907774,
+		"oA": 0,
+		"oAP": "\/images\/cakes.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/chips.jpg": {
+		"ft": 16384,
+		"iS": 764730,
+		"oA": 0,
+		"oAP": "\/images\/chips.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/cinemas.png": {
 		"ft": 32768,
 		"iS": 248045,
 		"oA": 0,
 		"oAP": "\/images\/cinemas.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/clothes.jpg": {
+		"ft": 16384,
+		"iS": 709106,
+		"oA": 0,
+		"oAP": "\/images\/clothes.jpg",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3190,13 +3222,13 @@
 		"oF": 0,
 		"opt": 1
 		},
-	"\/images\/popcorn.png": {
-		"ft": 32768,
-		"iS": 293010,
+	"\/images\/popcorn.jpg": {
+		"ft": 16384,
+		"iS": 967297,
 		"oA": 0,
-		"oAP": "\/images\/popcorn.png",
+		"oAP": "\/images\/popcorn.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/red-woman-girl-brown.jpg": {
 		"ft": 16384,

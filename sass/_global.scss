@@ -24,6 +24,9 @@ h1 {
 h2 {
   font-size: 36px;
 }
+h3 {
+  font-size: 24px;
+}
 p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4em;
@@ -32,6 +35,7 @@ p {
 main {
   @include cover-background('pexels-photo.jpg');
 }
+// Main section gradient overlay
 .main__gradient {
   position: absolute;
   top: 0;
@@ -48,9 +52,11 @@ header {
 .header__content {
   width: 90%;
   margin: 0 auto;
+  // Logo
   img {
     padding: 20px 0;
   }
+  // Text
   .header__content-info {
     padding-top: 20px;
     float: right;
@@ -63,6 +69,7 @@ header {
     }
   }
 }
+// Header link button
 .btn-default {
   border-radius: 0;
   border: 2px solid $black;
@@ -92,6 +99,7 @@ nav {
       text-transform: uppercase;
       -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
+      // Down arrow svg
       img {
         margin-left: 5px;
       }
@@ -122,20 +130,83 @@ nav {
 section {
   text-align: center;
 }
+.icon-grey {
+  margin: 20px 0;
+}
+// First section under hero
 .cinemas-and-food {
-
+  // Readings Cinemas
   .left {
     padding: 150px 0 250px 0;
   }
+  // Food and Dining
   .right {
     padding: 250px 0 150px 0;
   }
 }
-// Carounsel
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-margin: auto;
+// News and Events + Carousel
+.carousel-inner {
+  width: 100%;
 }
-.icon2 {
-  margin: 20px 0;
+.carousel__image1, .carousel__image2, .carousel__image3, .carousel__image4, .carousel__image5, .carousel__image6  {
+  height: 75vh;
+}
+.carousel__image1 {
+  @include cover-background('red-woman-girl-brown.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel__image2 {
+  @include cover-background('popcorn.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel__image3 {
+  @include cover-background('chips.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel__image4 {
+  @include cover-background('books.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel__image5 {
+  @include cover-background('cakes.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel__image6 {
+  @include cover-background('clothes.jpg');
+  &:before {
+    @include carousel-gradient;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  h3 {
+    letter-spacing: 4px;
+  }
+  a:link {
+    padding-bottom: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $white;
+    &:hover {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
