@@ -3108,6 +3108,14 @@
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
+	"\/images\/bg.png": {
+		"ft": 32768,
+		"iS": 146038,
+		"oA": 0,
+		"oAP": "\/images\/bg.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/books.jpg": {
 		"ft": 16384,
 		"iS": 572565,
@@ -3214,6 +3222,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/map.jpg": {
+		"ft": 16384,
+		"iS": 235703,
+		"oA": 0,
+		"oAP": "\/images\/map.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/pexels-photo.jpg": {
 		"ft": 16384,
 		"iS": 1144949,
@@ -3221,6 +3237,14 @@
 		"oAP": "\/images\/pexels-photo.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/placeholder.png": {
+		"ft": 32768,
+		"iS": 1834,
+		"oA": 0,
+		"oAP": "\/images\/placeholder.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/popcorn.jpg": {
 		"ft": 16384,
@@ -3235,6 +3259,14 @@
 		"iS": 591795,
 		"oA": 0,
 		"oAP": "\/images\/red-woman-girl-brown.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/smartphone.png": {
+		"ft": 32768,
+		"iS": 865,
+		"oA": 0,
+		"oAP": "\/images\/smartphone.png",
 		"oF": 0,
 		"opt": 0
 		},

@@ -30,6 +30,7 @@ h3 {
 p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4em;
+  font-size: 14px;
 }
 // Main
 main {
@@ -61,7 +62,6 @@ header {
     padding-top: 20px;
     float: right;
     p {
-      font-size: 14px;
       span {
       letter-spacing: 2px;
       margin-right: 25px;
@@ -71,15 +71,18 @@ header {
 }
 // Header link button
 .btn-default {
+  background-color: $white;
+  color: $black;
   border-radius: 0;
   border: 2px solid $black;
   margin-right: 50px;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
   &:hover {
-    border: 2px solid $black;
     background-color: $black;
     color: $white;
+    border-radius: 0;
+    border: 2px solid $black;
   }
 }
 // Nav bar
@@ -144,7 +147,11 @@ section {
     padding: 250px 0 150px 0;
   }
 }
-// News and Events + Carousel
+// Offers and Promotions
+.offers-and-promotions {
+  padding-top: 100px;
+}
+// News and Events, Offers and Promotions with Carousel
 .carousel-inner {
   width: 100%;
 }
@@ -198,15 +205,32 @@ section {
   h3 {
     letter-spacing: 4px;
   }
-  a:link {
+  a, a:visited {
+    color: $white;
+    text-decoration: none;
     padding-bottom: 5px;
     font-size: 14px;
-    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: $white;
     &:hover {
       border-bottom: 2px solid $white;
+      color: $white;
     }
+  }
+}
+// Centre location
+.centre-location {
+  padding: 100px 0;
+  p {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 25px;
+  img {
+    margin-right: 20px;
+    }
+  }
+  a {
+    font-size: 18px;
+    padding: 20px 40px;
   }
 }
