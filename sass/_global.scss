@@ -30,7 +30,7 @@ h3 {
 p {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4em;
-  font-size: 14px;
+  font-size: 18px;
 }
 // Main
 main {
@@ -249,11 +249,29 @@ form {
   padding: 50px 50px 100px;
 }
 .control-label {
-  text-align:left;
+  font-size: 18px;
+  letter-spacing: 2px;
+  top: 0;
+  left: 0;
 }
 input[type=email], input[type=text] {
   border-radius: 0;
   box-shadow: none;
+  padding: 25px;
+}
+button {
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  color: $white;
+  border: 2px solid $white;
+  padding: 10px 20px;
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
 }
 // Footer
 footer {
