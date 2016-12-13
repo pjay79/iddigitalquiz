@@ -70,7 +70,7 @@ header {
   }
 }
 // Header link button
-.btn-default {
+.btn-default, .btn-default:visited {
   background-color: $white;
   color: $black;
   border-radius: 0;
@@ -88,29 +88,41 @@ header {
 // Nav bar
 nav {
   width: 100%;
-  background-color: $black;
-  color: $white;
+  background-color: rgba($black, 0.4);
   ul {
     width: 90%;
-    margin: 0 auto 0 0;
-    list-style: none;
+    margin: 0 auto;
+    padding: 0 auto;
     li {
+      list-style: none;
+      display: inline;
+    }
+    a:link, a:visited {
       display: inline-block;
-      padding: 10px 2.5%;
+      padding: 15px 20px;
       font-family: 'Arial', sans-serif;
       font-size: 12px;
+      text-decoration: none;
       text-transform: uppercase;
+      color: $white;
       -webkit-transition: all 0.35s ease;
       transition: all 0.35s ease;
-      // Down arrow svg
-      img {
-        margin-left: 5px;
-      }
       &:hover {
-        background-color: $white;
+        background-color: rgba($white, 0.8);
         color: $black;
       }
     }
+  }
+}
+// Nav - dropdown
+.dropdown-menu {
+  margin-top: 18px;
+  padding: 0;
+  background-color: rgba($black, 0.4);
+  border-radius: 0;
+  a:link, a:visited {
+    display: block;
+    color: $white;
   }
 }
 // Hero
@@ -251,8 +263,7 @@ form {
 .control-label {
   font-size: 18px;
   letter-spacing: 2px;
-  top: 0;
-  left: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 input[type=email], input[type=text] {
   border-radius: 0;

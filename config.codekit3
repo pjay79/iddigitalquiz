@@ -3238,6 +3238,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/map-with-placeholder.jpg": {
+		"ft": 16384,
+		"iS": 241730,
+		"oA": 0,
+		"oAP": "\/images\/map-with-placeholder.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/images\/map.jpg": {
 		"ft": 16384,
 		"iS": 235703,
@@ -3253,6 +3261,14 @@
 		"oAP": "\/images\/pexels-photo.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/placeholder-black.png": {
+		"ft": 32768,
+		"iS": 2015,
+		"oA": 0,
+		"oAP": "\/images\/placeholder-black.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/placeholder.png": {
 		"ft": 32768,
@@ -3291,6 +3307,14 @@
 		"iS": 1418,
 		"oA": 0,
 		"oAP": "\/images\/twitter.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/upload (1).png": {
+		"ft": 32768,
+		"iS": 723,
+		"oA": 0,
+		"oAP": "\/images\/upload (1).png",
 		"oF": 0,
 		"opt": 0
 		},

@@ -14,3 +14,5 @@
   });
   // Hover touch
   $('body').bind('touchstart', function(){});
+
+  $('.dropdown-toggle').dropdown();
