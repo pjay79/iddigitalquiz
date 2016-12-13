@@ -1,6 +1,6 @@
-/* {
+* {
 outline: 1px dotted #ff0000;
-} */
+}
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
@@ -153,10 +153,22 @@ section {
   // Readings Cinemas
   .left {
     padding: 150px 0 250px 0;
+    @include media('<1200px') {
+      padding: 50px 25px;
+    }
+    img {
+      margin: 0 auto;
+    }
   }
   // Food and Dining
   .right {
     padding: 250px 0 150px 0;
+    @include media('<1200px') {
+      padding: 50px 25px;
+    }
+    img {
+      margin: 0 auto;
+    }
   }
 }
 // Offers and Promotions
@@ -238,6 +250,9 @@ section {
   }
   p {
     text-align: left;
+    @include media('<992px') {
+      text-align: center;
+    }
     font-size: 18px;
     margin-bottom: 25px;
   }
@@ -247,6 +262,9 @@ section {
   a {
     font-size: 18px;
     margin-top: 50px;
+    @include media('<992px') {
+      margin: 25px auto 0;
+    }
     padding: 20px 40px;
   }
 }
@@ -256,9 +274,12 @@ section {
   padding: 100px 0;
   color: $white;
   overflow: hidden;
+  p {
+    padding: 0 25px;
+  }
 }
 form {
-  padding: 50px 50px 100px;
+  padding: 50px 50px 0;
 }
 .control-label {
   font-size: 18px;
@@ -304,8 +325,11 @@ footer {
   .container {
     width: 90%;
     .col-md-4:nth-of-type(1) {
-      text-align: left;
       color: $black;
+      text-align: left;
+      @include media('<992px') {
+        text-align: center;
+      }
       img {
         margin-right: 20px;
         margin-top: -15px;
@@ -316,7 +340,9 @@ footer {
     }
     .col-md-4:nth-of-type(3) {
       text-align: right;
+      @include media('<992px') {
+        text-align: center;
+      }
     }
   }
-
 }

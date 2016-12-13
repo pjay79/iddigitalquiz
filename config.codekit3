@@ -3156,29 +3156,11 @@
 		"oF": 0,
 		"opt": 0
 		},
-	"\/images\/down-arrow.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/images\/down-arrow.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
 	"\/images\/download.png": {
 		"ft": 32768,
 		"iS": 968,
 		"oA": 0,
 		"oAP": "\/images\/download.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/drop-down-arrow.png": {
-		"ft": 32768,
-		"iS": 537,
-		"oA": 0,
-		"oAP": "\/images\/drop-down-arrow.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3246,14 +3228,6 @@
 		"oF": 0,
 		"opt": 1
 		},
-	"\/images\/map.jpg": {
-		"ft": 16384,
-		"iS": 235703,
-		"oA": 0,
-		"oAP": "\/images\/map.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/images\/pexels-photo.jpg": {
 		"ft": 16384,
 		"iS": 1144949,
@@ -3261,14 +3235,6 @@
 		"oAP": "\/images\/pexels-photo.jpg",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/images\/placeholder-black.png": {
-		"ft": 32768,
-		"iS": 2015,
-		"oA": 0,
-		"oAP": "\/images\/placeholder-black.png",
-		"oF": 0,
-		"opt": 0
 		},
 	"\/images\/placeholder.png": {
 		"ft": 32768,
@@ -3307,14 +3273,6 @@
 		"iS": 1418,
 		"oA": 0,
 		"oAP": "\/images\/twitter.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/images\/upload (1).png": {
-		"ft": 32768,
-		"iS": 723,
-		"oA": 0,
-		"oAP": "\/images\/upload (1).png",
 		"oF": 0,
 		"opt": 0
 		},
