@@ -126,7 +126,7 @@ nav {
   }
 }
 // Nav - mobile bottom
-.mobile-bottom {
+.footer__mobile-menu {
   opacity: 0;
   display: none;
   @include media('<768px') {
@@ -148,6 +148,23 @@ nav {
     &:hover {
       color: $black;
     }
+  }
+}
+// Icons - mobile bottom
+.footer__mobile-icons {
+  @include media('>=768px') {
+    opacity: 0;
+    display: none;
+  }
+  background-color: $black;
+  padding: 25px 10px;
+  img {
+    height: 25px;
+  }
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: $white;
   }
 }
 // Hero
@@ -340,6 +357,10 @@ footer {
 }
 // Copyright
 .copyright {
+  @include media('<768px') {
+    opacity: 0;
+    display: none;
+  }
   padding-top: 35px;
   padding-bottom: 25px;
   border: 1px solid $grey;

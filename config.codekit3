@@ -3132,6 +3132,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/car.png": {
+		"ft": 32768,
+		"iS": 1061,
+		"oA": 0,
+		"oAP": "\/images\/car.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/chips.jpg": {
 		"ft": 16384,
 		"iS": 764730,
@@ -3145,6 +3153,14 @@
 		"iS": 248045,
 		"oA": 0,
 		"oAP": "\/images\/cinemas.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/images\/clock.png": {
+		"ft": 32768,
+		"iS": 889,
+		"oA": 0,
+		"oAP": "\/images\/clock.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -3212,6 +3228,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/images\/magnifying-glass-mobile.png": {
+		"ft": 32768,
+		"iS": 852,
+		"oA": 0,
+		"oAP": "\/images\/magnifying-glass-mobile.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/magnifying-glass.png": {
 		"ft": 32768,
 		"iS": 1006,
@@ -3235,6 +3259,14 @@
 		"oAP": "\/images\/pexels-photo.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/images\/placeholder-mobile.png": {
+		"ft": 32768,
+		"iS": 896,
+		"oA": 0,
+		"oAP": "\/images\/placeholder-mobile.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/images\/placeholder.png": {
 		"ft": 32768,
