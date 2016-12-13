@@ -125,6 +125,31 @@ nav {
     color: $white;
   }
 }
+// Nav - mobile bottom
+.mobile-bottom {
+  opacity: 0;
+  display: none;
+  @include media('<768px') {
+    opacity: 1;
+    display: block;
+  }
+  li {
+    list-style: none;
+    display: block;
+    padding: 10px 0;
+  }
+  a:link, a:visited {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    color: $black;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    &:hover {
+      color: $black;
+    }
+  }
+}
 // Hero
 .hero {
   position: relative;
