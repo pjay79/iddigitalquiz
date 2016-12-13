@@ -58,13 +58,15 @@ header {
     opacity: 0;
     display: none;
   }
-  position: relative;
+  position: fixed;
+  top: 25px;
+  right: 25px;
   float: right;
-  z-index: 2;
-  width: 50px;
-  height: 50px;
-  margin-top: 20px;
-  margin-right: 20px;
+  z-index: 50;
+  width: 35px;
+  height: 35px;
+  //margin-top: 20px;
+  //margin-right: 20px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -117,7 +119,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 40;
   overflow: hidden;
   height: 100%;
   width: 100%;
@@ -126,23 +128,43 @@ header {
   transition: all 0.35s ease;
 }
 // Overlay mobile menu
-.overlay__mobile-menu {
-  margin: 0 auto;
-  padding: 0 auto;
-  li {
-    list-style: none;
-    display: block;
-    padding: 10px 0;
-  }
-  a:link, a:visited {
-    font-family: 'Arial', sans-serif;
-    font-size: 12px;
-    text-decoration: underline;
-    color: $white;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
-    &:hover {
-      color: $white;
+.header__hamburger-menu--overlay nav {
+  z-index: 40;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  display: block;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  //font-family: "GreycliffCF-DemiBold", "Helvetica Neue", Helvetica, sans-serif;
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    li {
+      list-style: none;
+      padding: 2vh 0;
+      -webkit-transition: all 0.35s ease;
+      transition: all 0.35s ease;
+      &:hover {
+        background-color: $white;
+      }
+      a {
+        display: block;
+        color: $white;
+        font-size: 24px;
+        text-decoration: none;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        &:hover {
+          background-color: $white;
+          color: $black;
+        }
+      }
     }
   }
 }
@@ -156,6 +178,10 @@ header {
   }
   // Text
   .header__content-info {
+    @include media('<1200px') {
+      opacity: 0;
+      display: none;
+    }
     padding-top: 20px;
     float: right;
     p {
