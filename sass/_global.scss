@@ -35,6 +35,8 @@ p {
 // Main
 main {
   @include cover-background('pexels-photo.jpg');
+  overflow: hidden;
+  background-color: $black;
 }
 // Main section gradient overlay
 .main__gradient {
@@ -50,6 +52,101 @@ header {
   min-height: 100px;
   background-color: $white;
 }
+// Header hamburger menu
+.header__hamburger-menu {
+  @include media('>=1200px') {
+    opacity: 0;
+    display: none;
+  }
+  position: relative;
+  float: right;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.header__hamburger-menu span,
+.header__hamburger-menu span:before,
+.header__hamburger-menu span:after {
+  position: absolute;
+  top: 50%;
+  display: block;
+  content: '';
+  height: 2px;
+  width: 35px;
+  border-radius: 1px;
+  background: $black;
+  cursor: pointer;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.header__hamburger-menu span:before {
+  top: -10px;
+  left: 0;
+}
+.header__hamburger-menu span:after {
+  top: 10px;
+  left: 0;
+}
+.header__hamburger-menu.active span {
+  background-color: transparent;
+}
+.header__hamburger-menu.active span:before,
+.header__hamburger-menu.active span:after {
+  top: 0;
+}
+.header__hamburger-menu.active span:before {
+  transform: rotate(135deg);
+  background: $white;
+}
+.header__hamburger-menu.active span:after {
+  transform: rotate(-135deg);
+  background: $white;
+}
+// Header hamburger menu overlay
+.header__hamburger-menu--overlay {
+  @include media('>=1200px') {
+    opacity: 0;
+    display: none;
+  }
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: rgba($black, 0.9);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+// Overlay mobile menu
+.overlay__mobile-menu {
+  margin: 0 auto;
+  padding: 0 auto;
+  li {
+    list-style: none;
+    display: block;
+    padding: 10px 0;
+  }
+  a:link, a:visited {
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    text-decoration: underline;
+    color: $white;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+// Header content
 .header__content {
   width: 90%;
   margin: 0 auto;
@@ -87,6 +184,10 @@ header {
 }
 // Nav bar
 nav {
+  @include media('<1200px') {
+    opacity: 0;
+    display: none;
+  }
   width: 100%;
   background-color: rgba($black, 0.4);
   ul {
