@@ -14,6 +14,23 @@
   });
   // Hover touch
   $('body').bind('touchstart', function(){});
+  // Sticky header
+  $(window).on('scroll', function() {
+    if ($(this).scrollTop() > 50) {
+      TweenLite.to($('header'), 0.5, {height: "90px", ease: Power4.easeOut});
+      TweenLite.to($('.logo'), 0.5, {scale: 0.8, ease: Power4.easeOut});
+      TweenLite.to($('main nav'), 0.5, {marginTop: "-10px", ease: Power4.easeOut});
+      TweenLite.to($('.header__mobile-content-info'), 0.5, {marginTop: "-10px", ease: Power4.easeOut});
+      TweenLite.to($('.header__mobile-content-info p'), 0.5, {paddingTop: "10px", paddingBottom: "10px", ease: Power4.easeOut});
+    }
+    else {
+      TweenLite.to($('header'), 0.5, {height: "100px", ease: Power4.easeOut});
+      TweenLite.to($('.logo'), 0.5, {scale: 1, ease: Power4.easeOut});
+      TweenLite.to($('main nav'), 0.5, {marginTop: "0", ease: Power4.easeOut});
+      TweenLite.to($('.header__mobile-content-info'), 0.5, {marginTop: "0", ease: Power4.easeOut});
+      TweenLite.to($('.header__mobile-content-info p'), 0.5, {paddingTop: "20px", paddingBottom: "20px", ease: Power4.easeOut});
+    }
+  });
   // Toggle drop down menu
   $('.dropdown-toggle').dropdown();
   // Hamburger menu overlay
