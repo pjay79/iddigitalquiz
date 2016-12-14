@@ -58,8 +58,18 @@ main {
 }
 // Header
 header {
-  min-height: 100px;
+  height: 100px;
   background-color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  //width: 100%;
+}
+.sticky {
+  height: 90px;
 }
 // Header hamburger menu
 .header__hamburger-menu {
@@ -250,6 +260,10 @@ header {
 }
 // Nav bar
 nav {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 100;
   @include media('<1070px') {
     opacity: 0;
     display: none;
@@ -301,7 +315,10 @@ nav {
 .hero {
   visibility: hidden;
   position: relative;
-  top: 40%;
+  top: 60%;
+  @include media('<1070px') {
+    top: 50%;
+  }
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
