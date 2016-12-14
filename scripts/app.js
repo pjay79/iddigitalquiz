@@ -1,7 +1,7 @@
   // Force scroll to top on refresh + force cache reload
   $(window).on('beforeunload', function(){
-  //$(window).scrollTop(0);
-  $(window).location.reload(true);
+    $(window).scrollTop(0);
+    $(window).location.reload(true);
   });
   // Set 100% viewport width/height to div's
   var fullscreen = function(){
@@ -34,3 +34,20 @@
     $('.header__hamburger-menu').removeClass('active');
     overlay.timeScale(5).reverse();
   });
+  // Main animation
+  $(window).on('load', function() {
+  var main__animation = new TimelineMax({paused:true, delay: 0.25});
+  main__animation.set($('.hero'), {visibility: "visible"})
+                 .from($('.hero h1'), 1, {autoAlpha: 0, x: "-=100px", ease: Power2.easeOut})
+                 .from($('.hero img:first-of-type'), 1, {autoAlpha: 0, scale: 2, rotation: 360, ease: Power2.easeOut}, 0.5)
+                 .from($('.hero h2'), 1, {autoAlpha: 0, x: "+=100px",ease: Power2.easeOut}, 1)
+                 .from($('.down'), 1, {autoAlpha: 0, y: "-=100px", ease: Bounce.easeOut}, 1.5);
+  main__animation.play();
+  });
+  // ScrollMagic scenes
+  var controller = new $.ScrollMagic.Controller();
+  var scene1 = new $.ScrollMagic.Scene({triggerElement: "#cinemas-and-food"});
+  var cinemasandfood = new TimelineMax();
+  cinemasandfood.staggerFrom($('.cinemas-and-food img'), 1.5, {autoAlpha: 0, y: "+=75px", ease: Expo.easeOut}, 0.35, 0);
+	scene1.setTween(cinemasandfood);
+	scene1.addTo(controller);

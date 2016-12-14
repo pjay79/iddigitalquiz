@@ -298,6 +298,7 @@ nav {
 }
 // Hero
 .hero {
+  visibility: hidden;
   position: relative;
   top: 40%;
   left: 50%;
@@ -324,6 +325,7 @@ nav {
     }
   }
   .down {
+    cursor: pointer;
     @include media('<500px') {
       margin-top: -50px;
     }
