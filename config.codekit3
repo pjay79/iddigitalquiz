@@ -3252,6 +3252,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/images\/next.png": {
+		"ft": 32768,
+		"iS": 659,
+		"oA": 0,
+		"oAP": "\/images\/next.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/images\/pexels-photo.jpg": {
 		"ft": 16384,
 		"iS": 1144949,
