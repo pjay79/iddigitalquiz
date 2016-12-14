@@ -216,6 +216,11 @@ header {
 }
 // Header content mobile
 .header__mobile-content-info {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  z-index: 100;
+  width: 100%;
   background-color: rgba($black, 0.6);
   color: $white;
   text-align: center;
@@ -316,9 +321,6 @@ nav {
   visibility: hidden;
   position: relative;
   top: 60%;
-  @include media('<1070px') {
-    top: 50%;
-  }
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
