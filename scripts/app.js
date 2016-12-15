@@ -48,29 +48,53 @@
   });
   // Init ScrollMagic controller
   var controller = new $.ScrollMagic.Controller();
-  // ScrollMagic scene
+  // ScrollMagic scenes
   var scene1 = new $.ScrollMagic.Scene({triggerElement: ".cinemas-and-food"});
   var cinemasandfood = new TimelineMax();
   cinemasandfood.staggerFrom($('.cinemas-and-food img'), 1.5, {autoAlpha: 0, y: "+=75px", ease: Expo.easeOut}, 0.35, 0);
 	scene1.setTween(cinemasandfood);
 	scene1.addTo(controller);
-  // Fade section headings in
-  $('section').each(function(){
-		var headings = new $.ScrollMagic.Scene({triggerElement: this, duration: "90%", triggerHook: 0.9});
-	      headings.setTween(TweenLite.from(this.children[0], 0.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power2.easeOut}));
-		    headings.addTo(controller);
-	});
-  // Fade footer heading in
-    var footer = new $.ScrollMagic.Scene({triggerElement: "#footer", duration: "90%", triggerHook: 0.9});
-        footer.setTween(TweenLite.from($('footer h2'), 0.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power2.easeOut}));
-        footer.addTo(controller);
-  // Fade carousels in
-  $('.carousel.slide').each(function(){
-		var headings = new $.ScrollMagic.Scene({triggerElement: this, duration: "100%", triggerHook: 1});
-	      headings.setTween(TweenLite.from(this, 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}));
-		    headings.addTo(controller);
-	});
+
+  var scene2 = new $.ScrollMagic.Scene({triggerElement: ".news-and-events"});
+  var newsandevents = new TimelineMax();
+  newsandevents.from($('.news-and-events h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
+               .from($('.news-and-events img:first-of-type'), 0.5, {autoAlpha: 0,scale: 2, rotation: 360, ease: Power2.easeOut}, 0.25)
+               .from($('#news-and-events__carousel'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power2.easeOut}, 0.25);
+	scene2.setTween(newsandevents);
+	scene2.addTo(controller);
+
+  var scene3 = new $.ScrollMagic.Scene({triggerElement: ".offers-and-promotions"});
+  var offersandpromotions = new TimelineMax();
+  offersandpromotions.from($('.offers-and-promotions h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
+                     .from($('.offers-and-promotions img:first-of-type'), 0.5, {autoAlpha: 0,scale: 2, rotation: 360, ease: Power2.easeOut}, 0.25)
+                     .from($('#offers-and-promotions__carousel'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power2.easeOut}, 0.25);
+	scene3.setTween(offersandpromotions);
+	scene3.addTo(controller);
+
+  var scene4 = new $.ScrollMagic.Scene({triggerElement: ".centre-location"});
+  var centrelocation = new TimelineMax();
+  centrelocation.from($('.centre-location h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
+                .from($('.centre-location .icon-grey'), 0.5, {autoAlpha: 0,scale: 2, rotation: 360, ease: Power2.easeOut}, 0.25)
+                .staggerFrom($('.centre-location .col-md-6'), 0.25, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}, 0.2);
+  scene4.setTween(centrelocation);
+  scene4.addTo(controller);
+
+  var scene5 = new $.ScrollMagic.Scene({triggerElement: ".sign-up"});
+  var signup = new TimelineMax();
+  signup.from($('.sign-up h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
+        .from($('.sign-up img:first-of-type'), 0.5, {autoAlpha: 0,scale: 2, rotation: 360, ease: Power2.easeOut}, 0.25)
+        .from($('.sign-up p'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}, 0.25)
+        .staggerFrom($('.form-group'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}, 0.2);
+  scene5.setTween(signup);
+  scene5.addTo(controller);
+
+  var scene6 = new $.ScrollMagic.Scene({triggerElement: "footer", triggerHook: 0.8});
+  var follow = new TimelineMax();
+  follow.from($('footer h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut});
+  scene6.setTween(follow);
+  scene6.addTo(controller);
+
   // Scroll
-  $('.up').click(function(){
+  $('.up').on('click', function(){
       $("html, body").animate({scrollTop: 0}, 1000);
   });
