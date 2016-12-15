@@ -6,7 +6,6 @@ outline: 1px dotted #ff0000;
   src: url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot');
   src: url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),      url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.woff') format('woff'), url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf') format('truetype'), url('/bower_components/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
-
 html, body {
   overflow-x: hidden;
 }
@@ -45,7 +44,7 @@ p {
 main {
   @include cover-background('pexels-photo.jpg');
   overflow: hidden;
-  background-color: $black;
+  background-color: $white;
 }
 // Main section gradient overlay
 .main__gradient {
@@ -68,10 +67,6 @@ header {
   z-index: 100;
   padding-top: 30px;
   padding-bottom: 10px;
-  //width: 100%;
-}
-.sticky {
-  height: 90px;
 }
 // Header hamburger menu
 .header__hamburger-menu {
@@ -86,8 +81,6 @@ header {
   z-index: 50;
   width: 35px;
   height: 35px;
-  //margin-top: 20px;
-  //margin-right: 20px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -192,7 +185,6 @@ header {
 .header__content {
   width: 90%;
   margin: 0 auto;
-  // Text
   .header__content-info {
     @include media('<1070px') {
       opacity: 0;
@@ -238,7 +230,6 @@ header {
     }
   }
 }
-
 // Header link button
 .btn-default, .btn-default:visited {
   background-color: $white;
@@ -336,12 +327,15 @@ nav {
       white-space: pre;
     }
   }
-  .down {
-    cursor: pointer;
-    @include media('<500px') {
-      margin-top: -50px;
-    }
+}
+// Scroll down / up
+.down {
+  @include media('<500px') {
+    margin-top: -50px;
   }
+}
+.up {
+  cursor: pointer;
 }
 // Sections
 section {
@@ -445,7 +439,6 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     &:hover {
-      //border-bottom: 2px solid $white;
       color: $white;
     }
   }
@@ -491,6 +484,7 @@ section {
     padding: 0 25px;
   }
 }
+// Form
 form {
   padding: 50px 50px 0;
 }
@@ -522,6 +516,7 @@ button {
 footer {
   text-align: center;
   padding-top: 50px;
+  color: $black;
 }
 .follow-us__icons {
   margin: 15px 15px 50px;

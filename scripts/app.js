@@ -19,7 +19,6 @@
   // Hamburger menu overlay
   var overlay = new TimelineMax({paused:true});
       overlay.to($('.header__hamburger-menu--overlay'), 0.25, { autoAlpha: 1 });
-             //.staggerFrom($('nav ul li a'), 0.25, { autoAlpha:0, scale: 1.5, cycle: {x: [-25, 25]}, ease: Expo.easeOut}, 0.25);
   $('.header__hamburger-menu').on('click', function() {
     if (!$(this).hasClass('active')) {
       $(this).addClass('active');
@@ -44,19 +43,31 @@
                  .from($('.down'), 1, {autoAlpha: 0, y: "-=100px", ease: Bounce.easeOut}, 1.5);
   main__animation.play();
   });
-  // ScrollMagic scenes
+  // Init ScrollMagic controller
   var controller = new $.ScrollMagic.Controller();
-  var scene1 = new $.ScrollMagic.Scene({triggerElement: "#cinemas-and-food"});
+  // ScrollMagic scene
+  var scene1 = new $.ScrollMagic.Scene({triggerElement: ".cinemas-and-food"});
   var cinemasandfood = new TimelineMax();
   cinemasandfood.staggerFrom($('.cinemas-and-food img'), 1.5, {autoAlpha: 0, y: "+=75px", ease: Expo.easeOut}, 0.35, 0);
 	scene1.setTween(cinemasandfood);
 	scene1.addTo(controller);
-  // Fade headings in
+  // Fade section headings in
   $('section').each(function(){
 		var headings = new $.ScrollMagic.Scene({triggerElement: this, duration: "90%", triggerHook: 0.9});
-	      headings.setTween(TweenLite.from(this.children[0], 1.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power4.easeOut}));
+	      headings.setTween(TweenLite.from(this.children[0], 0.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power2.easeOut}));
 		    headings.addTo(controller);
 	});
-  var footer = new $.ScrollMagic.Scene({triggerElement: "#footer", duration: "90%", triggerHook: 0.9});
-      footer.setTween(TweenLite.from($('footer h2'), 1.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power4.easeOut}));
-      footer.addTo(controller);
+  // Fade footer heading in
+    var footer = new $.ScrollMagic.Scene({triggerElement: "#footer", duration: "90%", triggerHook: 0.9});
+        footer.setTween(TweenLite.from($('footer h2'), 0.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power2.easeOut}));
+        footer.addTo(controller);
+  // Fade carousels in
+  $('.carousel.slide').each(function(){
+		var headings = new $.ScrollMagic.Scene({triggerElement: this, duration: "100%", triggerHook: 1});
+	      headings.setTween(TweenLite.from(this, 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}));
+		    headings.addTo(controller);
+	});
+  // Scroll
+  $('.up').click(function(){
+      $("html, body").animate({scrollTop: 0}, 1000);
+  });
