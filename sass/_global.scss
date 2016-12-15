@@ -241,12 +241,18 @@ header {
     opacity: 0;
     display: none;
   }
-  img {
-    clear: left;
-    float: right;
-    @include media('<500px') {
-      margin-top: -10px;
-      margin-left: 10px;
+  @include media('<400px') {
+    opacity: 0;
+    display: none;
+  }
+  p {
+    img {
+      clear: left;
+      float: right;
+      @include media('<500px') {
+        margin-top: -10px;
+        margin-left: 10px;
+      }
     }
   }
 }
@@ -334,6 +340,9 @@ nav {
     @include media('<500px') {
       font-size: 60px;
     }
+    @include media('<400px') {
+      font-size: 48px;
+    }
   }
   h2 {
     margin-bottom: 100px;
@@ -345,6 +354,12 @@ nav {
     @include media('<600px') {
       content: "\A";
       white-space: pre;
+    }
+  }
+  .down {
+    @include media('<400px') {
+      opacity: 0;
+      display: none;
     }
   }
 }
