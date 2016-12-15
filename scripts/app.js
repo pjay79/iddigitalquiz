@@ -33,8 +33,11 @@
     $('.header__hamburger-menu').removeClass('active');
     overlay.timeScale(5).reverse();
   });
-  // Main animation
+  // On load
   $(window).on('load', function() {
+  // Preloader
+  $('.preloader__wrapper').fadeOut('slow');
+  // Hero animation
   var main__animation = new TimelineMax({paused:true, delay: 0.25});
   main__animation.set($('.hero'), {visibility: "visible"})
                  .from($('.hero h1'), 1, {autoAlpha: 0, x: "-=100px", ease: Power2.easeOut})

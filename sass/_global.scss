@@ -40,6 +40,25 @@ p {
   line-height: 1.4em;
   font-size: 18px;
 }
+// Preloader
+.preloader__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  z-index: 1000;
+}
+.preloader__wrapper img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 // Main
 main {
   @include cover-background('pexels-photo.jpg');
