@@ -65,8 +65,8 @@ header {
   right: 0;
   bottom: 0;
   z-index: 100;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 // Header hamburger menu
 .header__hamburger-menu {
@@ -91,7 +91,7 @@ header {
   top: 50%;
   display: block;
   content: '';
-  height: 2px;
+  height: 3px;
   width: 35px;
   border-radius: 1px;
   background: $black;
@@ -186,6 +186,7 @@ header {
   width: 90%;
   margin: 0 auto;
   .header__content-info {
+    padding-top: 10px;
     @include media('<1070px') {
       opacity: 0;
       display: none;
