@@ -66,6 +66,8 @@ header {
   right: 0;
   bottom: 0;
   z-index: 100;
+  padding-top: 30px;
+  padding-bottom: 10px;
   //width: 100%;
 }
 .sticky {
@@ -158,7 +160,6 @@ header {
   -ms-transform: translate(-50%, -50%);
   padding: 0;
   margin: 0;
-  //font-family: "GreycliffCF-DemiBold", "Helvetica Neue", Helvetica, sans-serif;
   ul {
     width: 100%;
     padding: 0;
@@ -191,25 +192,16 @@ header {
 .header__content {
   width: 90%;
   margin: 0 auto;
-  // Logo
-  img {
-    padding: 20px 0;
-  }
   // Text
   .header__content-info {
     @include media('<1070px') {
       opacity: 0;
       display: none;
     }
-    padding-top: 20px;
     float: right;
     p {
       span {
-      letter-spacing: 2px;
       margin-right: 25px;
-      @include media('<1200px') {
-        letter-spacing: normal;
-        }
       }
     }
   }
@@ -219,13 +211,13 @@ header {
   position: fixed;
   top: 100px;
   left: 0;
-  z-index: 100;
+  z-index: 30;
   width: 100%;
   background-color: rgba($black, 0.6);
   color: $white;
   text-align: center;
   .line-break::before {
-    @include media('<500px') {
+    @include media('<525px') {
       content: "\A";
       white-space: pre;
     }

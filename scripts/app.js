@@ -14,23 +14,6 @@
   });
   // Hover touch
   $('body').bind('touchstart', function(){});
-  // Sticky header
-  $(window).on('scroll', function() {
-    if ($(this).scrollTop() > 50) {
-      TweenLite.to($('header'), 0.5, {height: "90px", ease: Power4.easeOut});
-      TweenLite.to($('.logo'), 0.5, {scale: 0.8, ease: Power4.easeOut});
-      TweenLite.to($('main nav'), 0.5, {marginTop: "-10px", ease: Power4.easeOut});
-      TweenLite.to($('.header__mobile-content-info'), 0.5, {marginTop: "-10px", ease: Power4.easeOut});
-      TweenLite.to($('.header__mobile-content-info p'), 0.5, {paddingTop: "10px", paddingBottom: "10px", ease: Power4.easeOut});
-    }
-    else {
-      TweenLite.to($('header'), 0.5, {height: "100px", ease: Power4.easeOut});
-      TweenLite.to($('.logo'), 0.5, {scale: 1, ease: Power4.easeOut});
-      TweenLite.to($('main nav'), 0.5, {marginTop: "0", ease: Power4.easeOut});
-      TweenLite.to($('.header__mobile-content-info'), 0.5, {marginTop: "0", ease: Power4.easeOut});
-      TweenLite.to($('.header__mobile-content-info p'), 0.5, {paddingTop: "20px", paddingBottom: "20px", ease: Power4.easeOut});
-    }
-  });
   // Toggle drop down menu
   $('.dropdown-toggle').dropdown();
   // Hamburger menu overlay
@@ -68,3 +51,12 @@
   cinemasandfood.staggerFrom($('.cinemas-and-food img'), 1.5, {autoAlpha: 0, y: "+=75px", ease: Expo.easeOut}, 0.35, 0);
 	scene1.setTween(cinemasandfood);
 	scene1.addTo(controller);
+  // Fade headings in
+  $('section').each(function(){
+		var headings = new $.ScrollMagic.Scene({triggerElement: this, duration: "90%", triggerHook: 0.9});
+	      headings.setTween(TweenLite.from(this.children[0], 1.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power4.easeOut}));
+		    headings.addTo(controller);
+	});
+  var footer = new $.ScrollMagic.Scene({triggerElement: "#footer", duration: "90%", triggerHook: 0.9});
+      footer.setTween(TweenLite.from($('footer h2'), 1.5, {autoAlpha: 0, scale: 0, y: "+=50px", ease: Power4.easeOut}));
+      footer.addTo(controller);
