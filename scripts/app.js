@@ -71,14 +71,3 @@
   $('.up').click(function(){
       $("html, body").animate({scrollTop: 0}, 1000);
   });
-
-  $('main').mousemove(function( event ) {
-
-  var containerWidth = $(this).innerWidth(),
-      containerHeight = $(this).innerHeight(),
-      mousePositionX = (event.pageX / containerWidth) * 20,
-      mousePositionY = (event.pageY /containerHeight) * 20;
-
-  $(this).css('background-position', mousePositionX + '%' + ' ' + mousePositionY + '%');
-
-  });
