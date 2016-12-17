@@ -3103,7 +3103,7 @@
 		"tS": 0
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -3406,7 +3406,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/style-min-min.css",
+		"oAP": "\/.css",
 		"oF": 0,
 		"oS": 0
 		},
@@ -3416,7 +3416,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/style-min.css",
+		"oAP": "\/.css",
 		"oF": 0,
 		"oS": 0
 		}
@@ -3428,7 +3428,7 @@
 "projectAttributes": {
 	"creationDate": 503192297,
 	"displayValue": "iddigitalquiz",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-confession"
 	},
 "projectSettings": {
@@ -5121,7 +5121,7 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 2,
-		"autoOutputPathFilenamePattern": "*-min.css",
+		"autoOutputPathFilenamePattern": ".css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
