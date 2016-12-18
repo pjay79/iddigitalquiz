@@ -3103,7 +3103,7 @@
 		"tS": 0
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -3114,7 +3114,7 @@
 		"oA": 0,
 		"oAP": "\/images\/bg.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/books.jpg": {
 		"ft": 16384,
@@ -3138,7 +3138,7 @@
 		"oA": 0,
 		"oAP": "\/images\/car.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/chips.jpg": {
 		"ft": 16384,
@@ -3154,7 +3154,7 @@
 		"oA": 0,
 		"oAP": "\/images\/cinemas.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/clock.png": {
 		"ft": 32768,
@@ -3162,7 +3162,7 @@
 		"oA": 0,
 		"oAP": "\/images\/clock.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/clothes.jpg": {
 		"ft": 16384,
@@ -3178,7 +3178,7 @@
 		"oA": 0,
 		"oAP": "\/images\/download.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/facebook.png": {
 		"ft": 32768,
@@ -3186,7 +3186,7 @@
 		"oA": 0,
 		"oAP": "\/images\/facebook.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/food.png": {
 		"ft": 32768,
@@ -3194,7 +3194,7 @@
 		"oA": 0,
 		"oAP": "\/images\/food.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/icon.png": {
 		"ft": 32768,
@@ -3202,7 +3202,7 @@
 		"oA": 0,
 		"oAP": "\/images\/icon.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/icon2.png": {
 		"ft": 32768,
@@ -3210,7 +3210,7 @@
 		"oA": 0,
 		"oAP": "\/images\/icon2.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/instagram.png": {
 		"ft": 32768,
@@ -3218,7 +3218,7 @@
 		"oA": 0,
 		"oAP": "\/images\/instagram.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/logo.png": {
 		"ft": 32768,
@@ -3226,7 +3226,7 @@
 		"oA": 0,
 		"oAP": "\/images\/logo.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/magnifying-glass-mobile.png": {
 		"ft": 32768,
@@ -3234,7 +3234,7 @@
 		"oA": 0,
 		"oAP": "\/images\/magnifying-glass-mobile.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/magnifying-glass.png": {
 		"ft": 32768,
@@ -3242,7 +3242,7 @@
 		"oA": 0,
 		"oAP": "\/images\/magnifying-glass.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/map-with-placeholder.jpg": {
 		"ft": 16384,
@@ -3250,7 +3250,7 @@
 		"oA": 0,
 		"oAP": "\/images\/map-with-placeholder.jpg",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/images\/next.png": {
 		"ft": 32768,
@@ -3258,7 +3258,7 @@
 		"oA": 0,
 		"oAP": "\/images\/next.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/pexels-photo.jpg": {
 		"ft": 16384,
@@ -3274,7 +3274,7 @@
 		"oA": 0,
 		"oAP": "\/images\/placeholder-mobile.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/placeholder.png": {
 		"ft": 32768,
@@ -3282,7 +3282,7 @@
 		"oA": 0,
 		"oAP": "\/images\/placeholder.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/popcorn.jpg": {
 		"ft": 16384,
@@ -3306,7 +3306,7 @@
 		"oA": 0,
 		"oAP": "\/images\/smartphone.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/twitter.png": {
 		"ft": 32768,
@@ -3314,7 +3314,7 @@
 		"oA": 0,
 		"oAP": "\/images\/twitter.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/images\/upload.png": {
 		"ft": 32768,
@@ -3322,7 +3322,7 @@
 		"oA": 0,
 		"oAP": "\/images\/upload.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/index.html": {
 		"ft": 8192,
