@@ -4,7 +4,19 @@
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js";
-
+// On load
+$(window).on('load', function() {
+// Preloader
+$('.preloader__wrapper').fadeOut('slow');
+// Main animation
+var main__animation = new TimelineMax({paused:true, delay: 0.25});
+main__animation.set($('.hero'), {visibility: "visible"})
+               .from($('.hero h1'), 1, {autoAlpha: 0, x: "-=100px", ease: Power2.easeOut})
+               .from($('.hero img:first-of-type'), 1, {autoAlpha: 0, scale: 2, rotation: 360, ease: Power2.easeOut}, 0.5)
+               .from($('.hero h2'), 1, {autoAlpha: 0, x: "+=100px",ease: Power2.easeOut}, 1)
+               .from($('.down'), 1, {autoAlpha: 0, y: "-=100px", ease: Bounce.easeOut}, 1.5);
+main__animation.play();
+});
 // Force scroll to top on refresh + force cache reload
 $(window).on('beforeunload', function(){
   $(window).scrollTop(0);
@@ -19,11 +31,11 @@ fullscreen();
 $(window).on('resize', function() {
   fullscreen();
 });
-// Hover touch
+// Make hover effects functional for touch devices
 $('body').bind('touchstart', function(){});
-// Toggle drop down menu
+// Toggle Bootstrap drop down menu
 $('.dropdown-toggle').dropdown();
-// Hamburger menu overlay
+// Hamburger menu overlay for smaller screens
 var overlay = new TimelineMax({paused:true});
     overlay.to($('.header__hamburger-menu--overlay'), 0.25, { autoAlpha: 1 });
 $('.header__hamburger-menu').on('click', function() {
@@ -35,33 +47,21 @@ $('.header__hamburger-menu').on('click', function() {
     overlay.timeScale(5).reverse();
   }
 });
-// Hamburger menu overlay - close on clicking link
+// Hamburger menu overlay close on clicking link
 $('nav li a').on('click', function() {
   $('.header__hamburger-menu').removeClass('active');
   overlay.timeScale(5).reverse();
 });
-// On load
-$(window).on('load', function() {
-// Preloader
-$('.preloader__wrapper').fadeOut('slow');
-// Hero animation
-var main__animation = new TimelineMax({paused:true, delay: 0.25});
-main__animation.set($('.hero'), {visibility: "visible"})
-               .from($('.hero h1'), 1, {autoAlpha: 0, x: "-=100px", ease: Power2.easeOut})
-               .from($('.hero img:first-of-type'), 1, {autoAlpha: 0, scale: 2, rotation: 360, ease: Power2.easeOut}, 0.5)
-               .from($('.hero h2'), 1, {autoAlpha: 0, x: "+=100px",ease: Power2.easeOut}, 1)
-               .from($('.down'), 1, {autoAlpha: 0, y: "-=100px", ease: Bounce.easeOut}, 1.5);
-main__animation.play();
-});
 // Init ScrollMagic controller
 var controller = new $.ScrollMagic.Controller();
 // ScrollMagic scenes
+// Cinemas and food
 var scene1 = new $.ScrollMagic.Scene({triggerElement: ".cinemas-and-food"});
 var cinemasandfood = new TimelineMax();
 cinemasandfood.staggerFrom($('.cinemas-and-food img'), 1.5, {autoAlpha: 0, y: "+=75px", ease: Expo.easeOut}, 0.35, 0);
 scene1.setTween(cinemasandfood);
 scene1.addTo(controller);
-
+// News and events
 var scene2 = new $.ScrollMagic.Scene({triggerElement: ".news-and-events"});
 var newsandevents = new TimelineMax();
 newsandevents.from($('.news-and-events h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
@@ -69,7 +69,7 @@ newsandevents.from($('.news-and-events h2'), 0.5, {autoAlpha: 0, y: "+=50px", ea
              .from($('#news-and-events__carousel'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power2.easeOut}, 0.25);
 scene2.setTween(newsandevents);
 scene2.addTo(controller);
-
+// Offers and promotions
 var scene3 = new $.ScrollMagic.Scene({triggerElement: ".offers-and-promotions"});
 var offersandpromotions = new TimelineMax();
 offersandpromotions.from($('.offers-and-promotions h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
@@ -77,7 +77,7 @@ offersandpromotions.from($('.offers-and-promotions h2'), 0.5, {autoAlpha: 0, y: 
                    .from($('#offers-and-promotions__carousel'), 0.5, {autoAlpha: 0, y: "+=100px", ease: Power2.easeOut}, 0.25);
 scene3.setTween(offersandpromotions);
 scene3.addTo(controller);
-
+// Centre location
 var scene4 = new $.ScrollMagic.Scene({triggerElement: ".centre-location"});
 var centrelocation = new TimelineMax();
 centrelocation.from($('.centre-location h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
@@ -85,7 +85,7 @@ centrelocation.from($('.centre-location h2'), 0.5, {autoAlpha: 0, y: "+=50px", e
               .staggerFrom($('.centre-location .col-md-6'), 0.25, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}, 0.2);
 scene4.setTween(centrelocation);
 scene4.addTo(controller);
-
+// Sign up
 var scene5 = new $.ScrollMagic.Scene({triggerElement: ".sign-up"});
 var signup = new TimelineMax();
 signup.from($('.sign-up h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut})
@@ -94,14 +94,13 @@ signup.from($('.sign-up h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.ease
       .staggerFrom($('.form-group'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut}, 0.2);
 scene5.setTween(signup);
 scene5.addTo(controller);
-
+// Footer
 var scene6 = new $.ScrollMagic.Scene({triggerElement: "footer", triggerHook: 0.8});
 var follow = new TimelineMax();
 follow.from($('footer h2'), 0.5, {autoAlpha: 0, y: "+=50px", ease: Power2.easeOut});
 scene6.setTween(follow);
 scene6.addTo(controller);
-
-// Scroll
+// Scroll up button
 $('.up').on('click', function(){
     $("html, body").animate({scrollTop: 0}, 1000);
 });
