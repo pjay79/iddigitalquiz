@@ -65,7 +65,7 @@ main {
   overflow: hidden;
   background-color: $white;
 }
-// Main section gradient overlay
+// Main gradient overlay
 .main__gradient {
   position: absolute;
   top: 0;
@@ -87,7 +87,7 @@ header {
   padding-top: 25px;
   padding-bottom: 20px;
 }
-// Header hamburger menu
+// Header hamburger menu for smaller screens
 .header__hamburger-menu {
   @include media('>=1070px') {
     opacity: 0;
@@ -141,7 +141,7 @@ header {
   transform: rotate(-135deg);
   background: $white;
 }
-// Header hamburger menu overlay
+// Header hamburger menu overlay for smaller screens
 .header__hamburger-menu--overlay {
   @include media('>=1200px') {
     opacity: 0;
@@ -160,7 +160,7 @@ header {
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
 }
-// Overlay mobile menu
+// Header hamburger menu overlay NAV for smaller screens
 .header__hamburger-menu--overlay nav {
   z-index: 40;
   position: relative;
@@ -218,7 +218,7 @@ header {
     }
   }
 }
-// Header content mobile
+// Header content for smaller screens
 .header__mobile-content-info {
   position: fixed;
   top: 100px;
@@ -256,7 +256,7 @@ header {
     }
   }
 }
-// Header link button
+// Header link TRADING HOURS button for bigger screens
 .btn-default, .btn-default:visited {
   background-color: $white;
   color: $black;
@@ -272,7 +272,7 @@ header {
     border: 2px solid $black;
   }
 }
-// Nav bar
+// Top nav bar for bigger screens
 nav {
   position: fixed;
   top: 100px;
@@ -314,7 +314,7 @@ nav {
     }
   }
 }
-// Nav - dropdown
+// Top nav bar DROPDOWN for bigger screens
 .dropdown-menu {
   margin-top: 18px;
   padding: 0;
@@ -366,7 +366,7 @@ nav {
     }
   }
 }
-// Scroll down / up
+// Scroll down / up icons
 .down {
   @include media('<500px') {
     margin-top: -50px;
@@ -375,10 +375,11 @@ nav {
 .up {
   cursor: pointer;
 }
-// Sections
+// All sections
 section {
   text-align: center;
 }
+// Section spinning icons gray and white
 .icon-grey, .icon-white {
   margin: 20px 0;
 }
@@ -458,6 +459,7 @@ section {
     @include carousel-gradient;
   }
 }
+// Carousel caption
 .carousel-caption {
   position: absolute;
   left: 50%;
@@ -556,6 +558,7 @@ footer {
   padding-top: 50px;
   color: $black;
 }
+// Follow is social icons
 .follow-us__icons {
   margin: 15px 15px 50px;
 }
@@ -596,7 +599,7 @@ footer {
     }
   }
 }
-// Nav - mobile bottom
+// Bottom nav menu for smaller screens
 .footer__mobile-menu {
   opacity: 0;
   display: none;
@@ -623,7 +626,7 @@ footer {
     }
   }
 }
-// Icons - mobile bottom
+// Bottom icons for smaller screens
 .footer__mobile-icons {
   @include media('>=768px') {
     opacity: 0;
