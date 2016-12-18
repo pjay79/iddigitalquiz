@@ -4,6 +4,9 @@
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/jquery.ScrollMagic.min.js";
 // @codekit-prepend "../bower_components/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js";
+
+// Preloader img
+TweenMax.from($('.preloader__wrapper img'), 1, {scale: 0, repeat: -1, yoyo: true, delay: 0.1, ease: Power2.easeOut});
 // On load
 $(window).on('load', function() {
 // Preloader
